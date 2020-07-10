@@ -75,7 +75,8 @@ a.shop:link, a.shop:visited {
   margin: 8px 0 0 0;
   padding: 22px 0px 22px 20px;
   line-height: 1; /* required for link button & info button to be aligned*/
-  min-width: 45%;
+  /* min-width: 45%; */
+  width: 70%;
 }
 a.shop:hover, a.shop:active {
   background-color: #62E5BE;
@@ -104,7 +105,7 @@ button.info {
   color: #333333;
   display: inline-block;
   height: 60px;
-  margin-left: -4px; /* remove gap between shop/misc links & info button */
+  margin-left: -4px; /* removes gap between shop/misc links & info button */
   padding: 5px 15px 5px 12px;
   vertical-align: bottom;
   line-height: 1;
@@ -170,6 +171,10 @@ span.products:hover {
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
+  a.shop:link, a.shop:visited {
+    min-width: 45%;
+    max-width: 60%;
+  }
   .content {
     max-width: 98%;
     padding: 0;
@@ -183,9 +188,6 @@ span.products:hover {
 }
 
 @media only screen and (min-width: 1080px) {
-  a.shop:link, a.shop:visited {
-    min-width: 60%;
-  }
   .content {
     max-width: 66%;
   }
