@@ -30,8 +30,8 @@ p {
   padding: 0;
 }
 p.outlier {
-  max-width: 52%;
   margin: 0 auto;
+  max-width: 95%;
 }
 
 li {
@@ -52,20 +52,19 @@ a:hover, a:active {  /* a:active is for when tapped/clicked on */
 }
 
 a.box:link, a.box:visited {
-  border: crimson solid 3px;
+  border: crimson solid 2px;
   border-radius: 3px;
   color: crimson;
-  padding: 5px;
-  font-size: 1.1em;
+  padding: 8px;
 }
 a.box:hover, a.box:active {
   background-color: crimson;
-  border: crimson solid 3px;
+  border: crimson solid 2px;
   color: #ffffff;
+  padding: 9px;
 }
 
 a.shop:link, a.shop:visited {
-  /* background-color: mediumpurple; */
   background-color: #FE9DB2;
   border-radius: 12px 0 0 12px;
   font-family: 'Karla', sans-serif;
@@ -75,17 +74,16 @@ a.shop:link, a.shop:visited {
   margin: 8px 0 0 0;
   padding: 22px 0px 22px 20px;
   line-height: 1; /* required for link button & info button to be aligned*/
-  /* min-width: 45%; */
   width: 70%;
 }
 a.shop:hover, a.shop:active {
-  background-color: #62E5BE;
-  color: black;
+  background-color: #94F1D5;
+  color: #540A61;
 }
 
 a.misc:hover, a.misc:active {
   background-color: #BBFA9A;
-  color: black;
+  color: #540A61;
 }
 
 a.social:link, a.social:visited {
@@ -115,6 +113,32 @@ button:hover, button:active {
   color: white;
 }
 
+div.flex {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+/* space social media icons evenly */
+div.social {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 15px;
+}
+
+span.products {
+  margin: auto;
+  max-width: 82%;
+  text-align: center;
+}
+span.products:hover {
+  background-color: #94F1D5;
+}
+
 .center {
   margin: 0 auto;
   text-align: center;
@@ -135,38 +159,11 @@ button:hover, button:active {
   visibility: hidden;  /* Even though javascript has hidden, this needs to be here too */
 }
 
-
-div.flex {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-/* space social media icons evenly */
-div.social {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 300px;
-  padding: 15px;
-}
-
-span.products {
-  margin: auto;
-  max-width: 60%;
-  text-align: center;
-}
-span.products:hover {
-  background-color: #94F1D5;
-}
-
 /* Larger than mobile settings */
 @media only screen and (min-width: 720px) {
   body {
     background-image: url("images/chicken.png");
-    background-size: 290px;  /* put the koi in one of the bottom corners or the chicken + Sol + koi */
+    background-size: 290px;
     background-position: bottom right;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -178,7 +175,10 @@ span.products:hover {
   .content {
     max-width: 98%;
     padding: 0;
-    background-color: rgba(245, 245, 245, 0.75);  /* White smoke in rgba */
+    background-color: rgba(245, 245, 245, 0.8);  /* White smoke in rgba */
+  }
+  p.outlier {
+    max-width: 75%;
   }
   span.products {
     max-width: 33%;
@@ -190,8 +190,5 @@ span.products:hover {
 @media only screen and (min-width: 1080px) {
   .content {
     max-width: 66%;
-  }
-  p.outlier {
-    max-width: 65%;
   }
 }
