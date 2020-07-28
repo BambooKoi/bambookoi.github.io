@@ -39,7 +39,7 @@ li {
 }
 
 :focus {
-  box-shadow: 0 0 0 2px #444;
+  box-shadow: 0 0 0 2px #444444;
 }
 
 a:link, a:visited {
@@ -55,25 +55,28 @@ a.box:link, a.box:visited {
   border: crimson solid 2px;
   border-radius: 3px;
   color: crimson;
+  font-weight: 500;
   padding: 8px;
+  transition: all 750ms;
 }
 a.box:hover, a.box:active {
   background-color: crimson;
   border: crimson solid 2px;
   color: #ffffff;
-  padding: 9px;
+  font-weight: 500;
 }
 
 a.shop:link, a.shop:visited {
   background-color: #FE9DB2;
   border-radius: 12px 0 0 12px;
   font-family: 'Karla', sans-serif;
-  font-weight: 700;
   color: #333333;
   display: inline-block;
+  font-weight: 700;
+  line-height: 1; /* required for link button & info button to be aligned*/
   margin: 8px 0 0 0;
   padding: 22px 0px 22px 20px;
-  line-height: 1; /* required for link button & info button to be aligned*/
+  transition: background-color 250ms linear;
   width: 70%;
 }
 a.shop:hover, a.shop:active {
@@ -103,10 +106,11 @@ button.info {
   color: #333333;
   display: inline-block;
   height: 60px;
+  line-height: 1;
   margin-left: -4px; /* removes gap between shop/misc links & info button */
   padding: 5px 15px 5px 12px;
+  transition: background-color 250ms linear;
   vertical-align: bottom;
-  line-height: 1;
 }
 button:hover, button:active {
   background-color: #F41F4C;
@@ -120,6 +124,16 @@ div.flex {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  -webkit-transition: opacity 0.35s;
+  -moz-transition: opacity 0.35s;
+  -ms-transition: opacity 0.35s;
+  -o-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+/* focus on hovering over product images */
+div.flex:hover > span.products:not(:hover)  {
+  opacity: 0.35;
+  transition: .8s ease;
 }
 /* space social media icons evenly */
 div.social {
@@ -135,10 +149,10 @@ span.products {
   max-width: 82%;
   text-align: center;
 }
-span.products:hover {
-  background-color: #94F1D5;
-}
 
+.caption {
+  color: mediumpurple;
+}
 .center {
   margin: 0 auto;
   text-align: center;
@@ -149,40 +163,40 @@ span.products:hover {
 }
 /* Collapsible Content */
 .content {
-  max-height: 0;
-  overflow: hidden;  /* So that the text doesn't load before the animation is done */
-  transition: max-height 0.5s ease-in;
+  cursor: auto;  /* Required to see cursor when hovered over content */
   margin: 0 auto;  /* centers content */
   margin-top: 5px;
+  max-height: 0;
+  overflow: hidden;  /* So that the text doesn't load before the animation is done */
   text-align: left;
-  cursor: auto;  /* Required to see cursor when hovered over content */
+  transition: max-height 0.5s ease-in;
   visibility: hidden;  /* Even though javascript has hidden, this needs to be here too */
 }
 
 /* Larger than mobile settings */
 @media only screen and (min-width: 720px) {
   body {
-    background-image: url("images/chicken.png");
-    background-size: 290px;
-    background-position: bottom right;
     background-attachment: fixed;
+    background-image: url("images/chicken.png");
+    background-position: bottom right;
     background-repeat: no-repeat;
+    background-size: 290px;
   }
   a.shop:link, a.shop:visited {
-    min-width: 45%;
     max-width: 60%;
+    min-width: 45%;
   }
   .content {
+    background-color: rgba(245, 245, 245, 0.8);  /* White smoke in rgba */
     max-width: 98%;
     padding: 0;
-    background-color: rgba(245, 245, 245, 0.8);  /* White smoke in rgba */
   }
   p.outlier {
     max-width: 75%;
   }
   span.products {
-    max-width: 33%;
     margin: auto;
+    max-width: 33%;
     padding: 1px 0 1px 2px;
   }
 }

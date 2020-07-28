@@ -2,33 +2,50 @@
 <html lang="en">
 
 <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102814295-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-102814295-6');
+    </script>
+    <!-- Google Analytics End -->
+    <!-- Footer, back to top -->
+    <script async>
+        window.onscroll = function() {scrolling()};
+    
+        function scrolling() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("scrolled").innerHTML = "Back to top";
+            } else {
+                document.getElementById("scrolled").innerHTML = "";
+            }
+        }
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="BambooKoi's shops and social media links, all in one place." />
+    <meta name="description" content="Welcome to my little home on the web. I'm BambooKoi and I draw cute vector illustrations. You can find all my shops and social media links are here." />
 
-    <title>BambooKoi - Links</title>
+    <!-- Open Graph Data (social link preview) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/iko_2-1.png" />
+    <meta property="og:url" content="https://www.bambookoi.github.io" />
+
+    <title>BambooKoi</title>
     <link rel="icon" type="image/png" href="images/iko.png" />
 
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102814295-6"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-102814295-6');
-    </script>
-    <!-- GA code ends here -->
 </head>
 
 <body>
 
     <div class="center">
-        <img src="images/iko.png" alt="BambooKoi's avatar icon" style="max-width:175px; height:auto;">
+        <img src="images/iko.png" alt="BambooKoi's avatar icon" style="max-width:170px; height:auto;">
     </div>
 
     <div class="center">
@@ -48,22 +65,22 @@
             <div class="flex">
                 <span class="products">
                     <a href="https://www.redbubble.com/people/bambookoi/shop?artistUserName=bambookoi&asc=u&iaCode=all-stickers" target="_blank" rel="noopener">
-                        <img src="images/rb_glossysticker.jpg" alt='A glossy sticker of a happy cactus with a balloon on a metal bottle.' style="max-width: 100%;">
-                        Stickers
+                        <img src="images/rb_glossysticker.jpg" alt='A happy cactus (with a balloon) - glossy sticker on a metal bottle.' style="max-width: 100%;">
+                        <p class="caption">Stickers</p>
                     </a>
                 </span>
             
                 <span class="products">
                     <a href="https://www.redbubble.com/people/bambookoi/shop?artistUserName=bambookoi&asc=u&iaCode=u-prints" target="_blank" rel="noopener">
                         <img src="images/rb_artprint.png" alt='An art print of "Mother&apos;s Pearls" - a Steven Universe fan art.' style="max-width: 100%;">
-                        Wall Art
+                        <p class="caption">Wall Art</p>
                     </a>
                 </span>
 
                 <span class="products">
                     <a href="https://www.redbubble.com/people/bambookoi/shop?artistUserName=bambookoi&asc=u&iaCode=u-socks" target="_blank" rel="noopener">
-                        <img src="images/rb_socks.jpg" alt='Socks with an onigiri pattern on them.' style="max-width: 100%;">
-                        Socks
+                        <img src="images/rb_socks.jpg" alt='Socks with an onigiri (Royal Onigiri) pattern on them.' style="max-width: 100%;">
+                        <p class="caption">Socks</p>
                     </a>
                 </span>
             </div>
@@ -104,21 +121,21 @@
                 <span class="products">
                     <a href="https://society6.com/bambookoi/notebooks" target="_blank" rel="noopener">
                         <img src="images/s6_notebook.jpg" alt='A notebook with an illustration of a mossy rock with the words "You Rock".' style="max-width: 100%;">
-                        Notebooks
+                        <p class="caption">Notebooks</p>
                     </a>
                 </span>
             
                 <span class="products">
                     <a href="https://society6.com/bambookoi/carry-all-pouches" target="_blank" rel="noopener">
                         <img src="images/s6_carry-allpouches.jpg" alt='A carry-all pouch with a turtle wearing shades and carrying a watermelon slice.' style="max-width: 100%;">
-                        Carry-All Pouches
+                        <p class="caption">Carry-All Pouches</p>
                     </a>
                 </span>
 
                 <span class="products">
                     <a href="https://society6.com/bambookoi/cards" target="_blank" rel="noopener">
                         <img src="images/s6_card.jpg" alt='A carry-all pouch featuring a design of koala with tea. Text around the koala says "Enjoying some koala-tea time by myself".' style="max-width: 100%;">
-                        Stationary Cards
+                        <p class="caption">Stationary Cards</p>
                     </a>
                 </span>
             </div>
@@ -154,21 +171,21 @@
                 <span class="products">
                     <a href="https://www.teepublic.com/user/bambookoi/tapestries" target="_blank" rel="noopener">
                         <img src="images/tp_tapestry.jpg" alt='A tapestry featuring Cookie Cat from Steven Universe.' style="max-width: 100%;">
-                        Tapestries
+                        <p class="caption">Tapestries</p>
                     </a>
                 </span>
 
                 <span class="products">
                     <a href="https://www.teepublic.com/user/bambookoi/pins" target="_blank" rel="noopener">
                         <img src="images/tp_pin.jpg" alt='A ghost pin. The text says "I am dead tired let me rest in peace".' style="max-width: 100%;">
-                        Pins
+                        <p class="caption">Pins</p>
                     </a>
                 </span>
 
                 <span class="products">
                     <a href="https://www.teepublic.com/user/bambookoi/laptop-case" target="_blank" rel="noopener">
                         <img src="images/tp_laptopcase.jpg" alt='A laptop case featuring CL4P-TP from the Borderlands franchise.' style="max-width: 100%;">
-                        Laptop Cases
+                        <p class="caption">Laptop Cases</p>
                     </a>
                 </span>
             </div>
@@ -183,8 +200,6 @@
                 <li>Steven Universe</li>
                 <li>& more to come in the future!</li>
             </ul>
-
-            <!-- <p>All newly uploaded designs go on sale for up to 48 hours from when they are published.</p> -->
 
             <p>
                 <a href="https://teepublic.com/user/bambookoi" class="box" target="_blank" rel=”noopener”>Shop My Teepublic</a>
@@ -205,21 +220,21 @@
                 <span class="products">
                     <a href="https://bambookoi.threadless.com/" target="_blank" rel="noopener">
                         <img src="images/th_bucketfeet.png" alt='Shoes with a frog and lilypad pattern.' style="max-width: 100%;">
-                        Bucketfeet Shoes
+                        <p class="caption">Bucketfeet Shoes</p>
                     </a>
                 </span>
             
                 <span class="products">
                     <a href="https://bambookoi.threadless.com/" target="_blank" rel="noopener">
                         <img src="images/th_shirt.png" alt='Picture of a shirt with a cute coffee cup eating a dounut.' style="max-width: 100%;">
-                        T-Shirts
+                        <p class="caption">T-Shirts</p>
                     </a>
                 </span>
 
                 <span class="products">
                     <a href="https://bambookoi.threadless.com/" target="_blank" rel="noopener">
                         <img src="images/th_tote.png" alt='A shiba inu in a bush disguise on a tote bag.' style="max-width: 100%;">
-                        Tote Bags
+                        <p class="caption">Tote Bags</p>
                     </a>
                 </span>
             </div>
@@ -280,43 +295,44 @@
         
     </div>
 
-
-    <div class="social">
-
-        <a href="https://www.instagram.com/bambookoi_art/" class="social" target="_blank" rel=”noopener” title="Follow BambooKoi on Instagram">
-            <i class="lab la-instagram" style="font-size: 40px;"></i>
-        </a>
-            
-        <a href="https://twitter.com/BambooKoi" class="social" target="_blank" rel=”noopener” title="Follow BambooKoi on Twitter">
-            <i class="lab la-twitter" style="font-size: 40px;"></i>
-        </a>
-
-        <!-- Link Break -->
-        <span style="font-size: 30px; color: lightgrey;">|</span>
-
-        <a href="https://www.behance.net/BambooKoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's Behance">
-            <i class="lab la-behance" style="font-size: 40px;"></i>
-        </a>
-
-        <a href="https://www.artstation.com/bambookoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's ArtStation">
-            <i class="lab la-artstation" style="font-size: 40px;"></i>
-        </a>
-        
-        <a href="https://dribbble.com/bambookoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's dribbble">
-            <i class="lab la-dribbble" style="font-size: 40px;"></i>
-        </a>
-
-    </div>
-
-
     <!-- Footer -->
-    <footer class="center">
-        <p style="font-size: small;">&copy; 2020 by BambooKoi (Barbara Nguyen)</p>
+    <footer class="center" style="margin-top: 10px;">
+        <div class="social">
+
+            <a href="https://www.instagram.com/bambookoi_art/" class="social" target="_blank" rel=”noopener” title="Follow BambooKoi on Instagram">
+                <i class="lab la-instagram" style="font-size: 40px;"></i>
+            </a>
+                
+            <a href="https://twitter.com/BambooKoi" class="social" target="_blank" rel=”noopener” title="Follow BambooKoi on Twitter">
+                <i class="lab la-twitter" style="font-size: 40px;"></i>
+            </a>
+
+            <!-- Link Break -->
+            <span style="font-size: 30px; color: lightgrey;">|</span>
+
+            <a href="https://www.behance.net/BambooKoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's Behance">
+                <i class="lab la-behance" style="font-size: 40px;"></i>
+            </a>
+
+            <a href="https://www.artstation.com/bambookoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's ArtStation">
+                <i class="lab la-artstation" style="font-size: 40px;"></i>
+            </a>
+            
+            <a href="https://dribbble.com/bambookoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's dribbble">
+                <i class="lab la-dribbble" style="font-size: 40px;"></i>
+            </a>
+
+        </div>
+
+        <p style="font-size: small;">&copy; 2020 by BambooKoi (Barbara Nguyen)
+            <br><a href="#" id="scrolled" style="font-size:small; text-transform: uppercase; margin: 5px;"></a>
+        </p>
+        
     </footer>
 
-
-    <script>
-        // Collapse
+</body>
+    <!-- Show/Collapse Info -->
+    <script async>
         var coll = document.getElementsByClassName("collapse");
         var i;
 
@@ -333,6 +349,4 @@
         });
         }
     </script>
-
-</body>
 </html>
