@@ -4,46 +4,15 @@
 <head>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102814295-6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'UA-102814295-6');
-    </script>
-
-    <!-- Show back to top on scroll -->
-    <script async>
-        window.onscroll = function() {scrolling()};
-        
-        function scrolling() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            document.getElementById("scrolled").innerHTML = '<a href="#" id="scrolled" title="Back to top"><i class="las la-angle-up"></i></a>';
-        } else {
-            document.getElementById("scrolled").innerHTML = '';
-        }
-    }
-    </script>
-
-    <!-- Import header.html and footer.html -->
+    <!-- Import header.html and footer.html, does not work local -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(function() {
-            $("#footer").load("footer.html");
-        });
-    </script>
+    <script async type="text/javascript" src="script.js"></script>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <div id="header"></div>
     <meta name="description" content="Welcome to my little home on the web. I'm BambooKoi and I draw cute vector illustrations. You can find all my shops and social media links are here." />
 
-    <!-- Open Graph Data (social link preview) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="images/iko_2-1.png" />
-    <meta property="og:url" content="https://www.bambookoi.github.io" />
-
     <title>BambooKoi</title>
-    <link rel="icon" type="image/png" href="images/iko.png" />
 
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
@@ -336,11 +305,7 @@
     </div> <!-- Main div end -->
 
     <!-- Footer -->
-    <div id="footer" class="center footer">
-
-        <!-- <p style="font-size: small;">&copy; 2020 by BambooKoi (Barbara Nguyen)</p> -->
-
-    </div>
+    <div id="footer" class="center footer"></div>
     
     <div class="backtop" id="scrolled"></div>
 
