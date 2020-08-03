@@ -11,19 +11,23 @@
 
         gtag('config', 'UA-102814295-6');
     </script>
-    <!-- Google Analytics End -->
-    <!-- Footer, back to top -->
+
+    <!-- Show back to top on scroll -->
     <script async>
         window.onscroll = function() {scrolling()};
-    
+        
         function scrolling() {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                document.getElementById("scrolled").innerHTML = "Back to top";
-            } else {
-                document.getElementById("scrolled").innerHTML = "";
-            }
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("scrolled").innerHTML = '<a href="#" id="scrolled" title="Back to top"><i class="las la-angle-up"></i></a>';
+        } else {
+            document.getElementById("scrolled").innerHTML = '';
         }
+    }
     </script>
+
+    <!-- Import header.html and footer.html -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,11 +47,14 @@
 </head>
 
 <body>
-
     <div class="center">
-        <img src="images/iko.png" alt="BambooKoi's avatar icon" style="max-width:170px; height:auto;">
+        <img src="images/iko.png" alt="BambooKoi's avatar icon" style="max-width:170px; height:auto;" >
     </div>
 
+    <!-- Nav -->
+    <div id="nav" class="nav"></div>
+
+    <div> <!-- Main div -->
     <div class="center">
         <h1>Shops</h1>
         <p class="outlier">All shops offer shirts, stickers, face masks (general public use only), prints & more.
@@ -57,7 +64,7 @@
         <!-- Redbubble -->
         <a href="https://bambookoi.redbubble.com" class="shop" target="_blank" rel=”noopener”>&emsp;&emsp;Redbubble</a>
 
-        <button type="button" class="collapse info" name="redbubble" alt="More info - Redbubble"><i class="lar la-question-circle la-2x"></i></button>
+        <button type="button" class="info" title="More info - Redbubble"><i class="lar la-question-circle la-2x"></i></button>
         <div class="content">
             <h2>Redbubble</h2>
                         
@@ -104,15 +111,13 @@
 
             <p>
                 <a href="https://bambookoi.redbubble.com" class="box" target="_blank" rel=”noopener”>Shop My Redbubble</a>
-                <a href="#" style="float:right; font-size:small; text-transform: uppercase;">Back to top</a>
             </p>
-            <!-- Added <br> below because button keeps getting clipped -->
             <br>
         </div>
         
         <!-- Society6 -->
         <a href="https://society6.com/bambookoi" class="shop" target="_blank" rel=”noopener”>&emsp;&emsp;Society6</a>
-        <button type="button" class="collapse info" alt="More info - Society6"><i class="lar la-question-circle la-2x"></i></button>
+        <button type="button" class="info" title="More info - Society6"><i class="lar la-question-circle la-2x"></i></button>
         <div class="content">
             <h2>Society6</h2>
                         
@@ -156,13 +161,12 @@
 
             <p>
                 <a href="https://society6.com/bambookoi" class="box" target="_blank" rel=”noopener”>Shop My Society6</a>
-                <a href="#" style="float:right; font-size:small; text-transform: uppercase;">Back to top</a>
             </p>
         </div>
 
         <!-- Teepublic -->
         <a href="https://teepublic.com/user/bambookoi" class="shop" target="_blank" rel=”noopener”>&emsp;&emsp;Teepublic</a>
-        <button type="button" class="collapse info" alt="More info - Teepublic"><i class="lar la-question-circle la-2x"></i></button>
+        <button type="button" class="info" title="More info - Teepublic"><i class="lar la-question-circle la-2x"></i></button>
         <div class="content">
             <h2>Teepublic</h2>
                         
@@ -203,13 +207,12 @@
 
             <p>
                 <a href="https://teepublic.com/user/bambookoi" class="box" target="_blank" rel=”noopener”>Shop My Teepublic</a>
-                <a href="#" style="float:right; font-size:small; text-transform: uppercase;">Back to top</a>
             </p>
         </div>
 
         <!-- Threadless -->
         <a href="https://bambookoi.threadless.com" class="shop" target="_blank" rel=”noopener”>&emsp;&emsp;Threadless*</a>
-        <button type="button" class="collapse info" alt="More info - Threadless"><i class="lar la-question-circle la-2x"></i></button>
+        <button type="button" class="info" title="More info - Threadless"><i class="lar la-question-circle la-2x"></i></button>
         <div class="content">
             <h2>Threadless*</h2>
             
@@ -245,8 +248,8 @@
                 <li>Skateboard Decks & Skateboards</li>
             </ul>
 
+            <p>
                 <a href="https://bambookoi.threadless.com/" class="box" target="_blank" rel=”noopener”>Shop My Threadless</a>
-                <a href="#" style="float:right; font-size:small; text-transform: uppercase;">Back to top</a>
             </p>
         </div>
 
@@ -254,28 +257,27 @@
         <h1>Misc.</h1>
 
         <!-- Freebies -->
-        <a href="https://ko-fi.com/bambookoi" class="shop misc" target="_blank" rel="noopener">&emsp;&emsp;Freebies</a>
+        <a href="https://ko-fi.com/album/Wallpaper-O5O012PWV" class="shop misc" target="_blank" rel="noopener">&emsp;&emsp;Freebies</a>
 
-        <button type="button" class="collapse info" alt="More info - Freebies"><i class="lar la-question-circle la-2x"></i></i></button>
+        <button type="button" class="info" title="More info - Freebies"><i class="lar la-question-circle la-2x"></i></i></button>
         <div class="content">
 
             <h2>Freebies</h2>
 
             <h3>Phone Wallpaperss</h3>
-            <p>Download any one of these three images, just follow the link below.</p>
+            <p>Download any one of these images and more below, just follow the link. For personal use only. 720 x 1280 resolution.</p>
             <img src="images/wallpapers.png" alt="Sample images of phone wallpapers" style="max-width: 100%;">
-
-            <p style="font-size: small;">For personal use only. 720 x 1280 resolution.</p><br>
-
-            <a href="https://ko-fi.com/album/Wallpaper-O5O012PWV" class="box" target="_blank" rel="noopener">Download Wallpapers</a><br>
-
-            <a href="#" style="float:right; font-size:small; text-transform: uppercase;">Back to top</a>
+            
+            <br><br>
+            <a href="https://ko-fi.com/album/Wallpaper-O5O012PWV" class="box" target="_blank" rel="noopener">Download Wallpapers</a>
+            <br><br>
+            
         </div>
 
         <!-- Ko-fi -->
         <a href="https://ko-fi.com/bambookoi" class="shop misc" target="_blank" rel="noopener">&emsp;&emsp;Ko-fi (Support Me)</a>
 
-        <button type="button" class="collapse info" alt="More info - Ko-fi"><i class="lar la-question-circle la-2x"></i></i></button>
+        <button type="button" class="info" title="More info - Ko-fi"><i class="lar la-question-circle la-2x"></i></i></button>
         <div class="content">
 
             <h2>Ko-fi</h2>
@@ -284,60 +286,67 @@
             <p>Ko-fi is basically a virtual tip jar where you can support creatives for about the price of a cup of coffee.</p>
 
             <p>
-            At this time, I'm not very active on Ko-fi nor do I offer any rewards. If you love my art and feel like supporting me, hit the button below to get started.
+            At this time, I'm not very active on Ko-fi nor do I offer any rewards. If you love my work and feel like supporting me, hit the button below to get started.
             </p>
 
-            <p>I will appreciate any amount you choose to donate. Thank you (´• ω •`) ♡ !</p>
+            <p>Tipping is optional but I will appreciate any amount you choose to donate. Thank you (´• ω •`) ♡ !</p>
 
             <!-- Ko-fi button -->
             <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'I2I77G74');kofiwidget2.draw();</script><br/>
-        </div>
+        </div> 
         
     </div>
 
-    <!-- Footer -->
-    <footer class="center" style="margin-top: 10px;">
-        <div class="social">
+    <!-- Social Links -->
+    <div class="social">
 
-            <a href="https://www.instagram.com/bambookoi_art/" class="social" target="_blank" rel=”noopener” title="Follow BambooKoi on Instagram">
-                <i class="lab la-instagram" style="font-size: 40px;"></i>
-            </a>
-                
-            <a href="https://twitter.com/BambooKoi" class="social" target="_blank" rel=”noopener” title="Follow BambooKoi on Twitter">
-                <i class="lab la-twitter" style="font-size: 40px;"></i>
-            </a>
-
-            <!-- Link Break -->
-            <span style="font-size: 30px; color: lightgrey;">|</span>
-
-            <a href="https://www.behance.net/BambooKoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's Behance">
-                <i class="lab la-behance" style="font-size: 40px;"></i>
-            </a>
-
-            <a href="https://www.artstation.com/bambookoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's ArtStation">
-                <i class="lab la-artstation" style="font-size: 40px;"></i>
-            </a>
+        <!-- Instagram/Twitter -->
+        <a href="https://instagram.com/bambookoi_art/" class="social" target="_blank" rel=”noopener” title="Follow BambooKoi on Instagram">
+            <i class="lab la-instagram"></i>
+        </a>
             
-            <a href="https://dribbble.com/bambookoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's dribbble">
-                <i class="lab la-dribbble" style="font-size: 40px;"></i>
-            </a>
+        <a href="https://twitter.com/BambooKoi" class="social" target="_blank" rel=”noopener” title="Follow BambooKoi on Twitter">
+            <i class="lab la-twitter"></i>
+        </a>
 
-        </div>
+        <!-- Design Portfolios -->
+        <a href="https://dribbble.com/bambookoi" class="social" target="_blank" rel="noopener" title="BambooKoi's dribbble">
+            <i class="lab la-dribbble"></i>
+        </a>
 
-        <p style="font-size: small;">&copy; 2020 by BambooKoi (Barbara Nguyen)
-            <br><a href="#" id="scrolled" style="font-size:small; text-transform: uppercase; margin: 5px;"></a>
-        </p>
-        
-    </footer>
+        <a href="https://artstation.com/bambookoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's ArtStation">
+            <i class="lab la-artstation"></i>
+        </a>
 
-</body>
+        <a href="https://behance.net/BambooKoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's Behance">
+            <i class="lab la-behance"></i>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/bambookoi" class="social" target="_blank" rel="noopener" title="BambooKoi's GitHub Profile">
+            <i class="lab la-github"></i>
+        </a>
+
+    </div>
+
+    </div> <!-- Main div end -->
+
+    <!-- Footer -->
+    <div id="footer" class="center footer">
+
+        <!-- <p style="font-size: small;">&copy; 2020 by BambooKoi (Barbara Nguyen)</p> -->
+
+    </div>
+    
+    <div class="backtop" id="scrolled"></div>
+
     <!-- Show/Collapse Info -->
     <script async>
-        var coll = document.getElementsByClassName("collapse");
-        var i;
+        var collapse = document.getElementsByClassName("info");
+        var index;
 
-        for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+        for (index = 0; index < collapse.length; index++) {
+        collapse[index].addEventListener("click", function() {
             var content = this.nextElementSibling;
             if (content.style.maxHeight){
             content.style.maxHeight = null;
@@ -349,4 +358,6 @@
         });
         }
     </script>
+
+</body>
 </html>

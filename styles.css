@@ -1,7 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: whitesmoke;
   font-family: 'Roboto', sans-serif;
-  }
+  height: 100%;
+}
 
 h1 {
   color: #FF5900;
@@ -18,7 +23,6 @@ h3 {
   border-left: #46301a solid 4px;
   color: #46301a;
   font-family: 'Karla', sans-serif;
-  margin-bottom: 0.5em;
   padding-left: 4px;
   padding-bottom: 0;
 }
@@ -27,7 +31,6 @@ p {
   color: #333333;
   font-family: 'Roboto', sans-serif;
   margin-top: 0.5em;
-  padding: 0;
 }
 p.outlier {
   margin: 0 auto;
@@ -90,24 +93,23 @@ a.misc:hover, a.misc:active {
 }
 
 a.social:link, a.social:visited {
-  /* color: #F8456C; */
-  color: #62E5BE;
+  color: #F8456C;
   text-decoration: none;  /* removes underline */
 }
 a.social:hover, a:active {  /* a:active is for when tapped/clicked on */
-  color: #F8456C;
+  color: #62E5BE;
   text-decoration: none;
 }
 
-
 button.info {
   background-color: #FFA06D;
+  border: none;
   border-radius: 0 12px 12px 0;
   color: #333333;
   display: inline-block;
   height: 60px;
   line-height: 1;
-  margin-left: -4px; /* removes gap between shop/misc links & info button */
+  margin-left: -4px;  /* removes gap between shop/misc links & info button */
   padding: 5px 15px 5px 12px;
   transition: background-color 250ms linear;
   vertical-align: bottom;
@@ -135,21 +137,53 @@ div.flex:hover > span.products:not(:hover)  {
   opacity: 0.35;
   transition: .8s ease;
 }
-/* space social media icons evenly */
+
+/* spaces social media icons evenly */
 div.social {
   display: flex;
+  font-size: 38px;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 300px;
-  padding: 15px;
+  padding: 10px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* transitions */
+  -webkit-transition: opacity 0.35s;
+  -moz-transition: opacity 0.35s;
+  -ms-transition: opacity 0.35s;
+  -o-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+div.social:hover > a.social:not(:hover) {
+  /* focus on hovering icons */
+  opacity: 0.35;
+  transition: .8s ease;
 }
 
 span.products {
-  margin: auto;
+  margin: auto;  /* Centers products on mobile */
   max-width: 82%;
   text-align: center;
 }
 
+.backtop {
+  background-color: rgba(245, 245, 245, 0.5);  /* Match footer color */
+  border-radius: 5px;
+  bottom:10px;
+  font-size: 2.3em;
+  font-weight: 500;
+  padding: 5px 5px 0 5px;
+  position: fixed;
+  right:10px;
+}
+.backtop:hover {
+  background-color: #FE9DB2;
+}
 .caption {
   color: mediumpurple;
 }
@@ -157,20 +191,15 @@ span.products {
   margin: 0 auto;
   text-align: center;
 }
-/* Show/Hide Info */
-.collapse {
-  border: none;
-}
 /* Collapsible Content */
 .content {
   cursor: auto;  /* Required to see cursor when hovered over content */
   margin: 0 auto;  /* centers content */
-  margin-top: 5px;
   max-height: 0;
-  overflow: hidden;  /* So that the text doesn't load before the animation is done */
+  overflow: hidden;  /* Text doesn't load before show animation is done */
   text-align: left;
   transition: max-height 0.5s ease-in;
-  visibility: hidden;  /* Even though javascript has hidden, this needs to be here too */
+  visibility: hidden;
 }
 
 /* Larger than mobile settings */
@@ -189,7 +218,6 @@ span.products {
   .content {
     background-color: rgba(245, 245, 245, 0.8);  /* White smoke in rgba */
     max-width: 98%;
-    padding: 0;
   }
   p.outlier {
     max-width: 75%;
