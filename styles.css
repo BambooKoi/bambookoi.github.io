@@ -9,7 +9,8 @@ body {
 }
 
 h1 {
-  color: #FF5900;
+  /* color: #FF5900; */
+  color: #FF8746;
   font-family: 'Karla', sans-serif;
   font-weight: 700;
   margin-bottom: 0.3em;
@@ -24,13 +25,11 @@ h3 {
   color: #46301a;
   font-family: 'Karla', sans-serif;
   padding-left: 4px;
-  padding-bottom: 0;
 }
 
 p {
   color: #333333;
   font-family: 'Roboto', sans-serif;
-  margin-top: 0.5em;
 }
 p.outlier {
   margin: 0 auto;
@@ -41,19 +40,16 @@ li {
   color: #333333;
 }
 
-:focus {
-  box-shadow: 0 0 0 2px #444444;
-}
-
+/* Regular Links */
 a:link, a:visited {
   color: mediumpurple;
   text-decoration: none;  /* removes underline */
 }
 a:hover, a:active {  /* a:active is for when tapped/clicked on */
   color: #333333;
-  text-decoration: none;
 }
 
+/* Box Links */
 a.box:link, a.box:visited {
   border: crimson solid 2px;
   border-radius: 3px;
@@ -66,9 +62,9 @@ a.box:hover, a.box:active {
   background-color: crimson;
   border: crimson solid 2px;
   color: #ffffff;
-  font-weight: 500;
 }
 
+/* Button Links - Shop */
 a.shop:link, a.shop:visited {
   background-color: #FE9DB2;
   border-radius: 12px 0 0 12px;
@@ -87,18 +83,18 @@ a.shop:hover, a.shop:active {
   color: #540A61;
 }
 
+/* Button Links - Misc */
+a.misc:link, a.misc:visited {
+  background-color: #94F1D5;
+}
 a.misc:hover, a.misc:active {
-  background-color: #BBFA9A;
+  background-color: #FE9DB2;
   color: #540A61;
 }
 
+/* Social Links */
 a.social:link, a.social:visited {
   color: #F8456C;
-  text-decoration: none;  /* removes underline */
-}
-a.social:hover, a:active {  /* a:active is for when tapped/clicked on */
-  color: #62E5BE;
-  text-decoration: none;
 }
 
 button.info {
@@ -120,21 +116,25 @@ button:hover, button:active {
 }
 
 div.flex {
+  font-weight: 500;
+  /* Flex */
   display: -ms-flexbox;
   display: -webkit-flex;
   display: -moz-box;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  -webkit-transition: opacity 0.35s;
-  -moz-transition: opacity 0.35s;
-  -ms-transition: opacity 0.35s;
-  -o-transition: opacity 0.35s;
-  transition: opacity 0.35s;
+  /* Transitions*/
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 /* focus on hovering over product images */
-div.flex:hover > span.products:not(:hover)  {
-  opacity: 0.35;
+div.flex:hover > span.products:not(:hover) {
+  color: #444444;
+  opacity: 0.4;
   transition: .8s ease;
 }
 
@@ -165,6 +165,40 @@ div.social:hover > a.social:not(:hover) {
   transition: .8s ease;
 }
 
+/* Navigation */
+/* Figure out how to align vertical */
+div.nav {
+  background-color: rgba(245, 245, 245, 0.9);
+  display: none;
+  font-family: 'Karla', sans-serif;
+  font-family: 700;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+div.nav a {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.8em;
+  padding: 15px;
+}
+div.nav a:hover {
+  background-color: white;
+}
+a.burger {
+  font-size: 2.6em;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  z-index: 1;
+}
+
+footer {
+  padding: 10px;
+}
+
 span.products {
   margin: auto;  /* Centers products on mobile */
   max-width: 82%;
@@ -173,19 +207,16 @@ span.products {
 
 .backtop {
   background-color: rgba(245, 245, 245, 0.5);  /* Match footer color */
-  border-radius: 5px;
+  border-radius: 6px;
   bottom:10px;
-  font-size: 2.3em;
-  font-weight: 500;
+  font-size: 2em;
+  font-weight: 700;
   padding: 5px 5px 0 5px;
   position: fixed;
   right:10px;
 }
 .backtop:hover {
   background-color: #FE9DB2;
-}
-.caption {
-  color: mediumpurple;
 }
 .center {
   margin: 0 auto;
@@ -200,6 +231,10 @@ span.products {
   text-align: left;
   transition: max-height 0.5s ease-in;
   visibility: hidden;
+}
+
+:focus {
+  box-shadow: 0 0 0 2px #444444;
 }
 
 /* Larger than mobile settings */
@@ -227,6 +262,26 @@ span.products {
     max-width: 33%;
     padding: 1px 0 1px 2px;
   }
+  
+  /* Navigation */
+div.nav {
+  /* background-color: #FE9DB2; */
+  background-color: white;
+  display: flex;
+  top: auto;
+  bottom: auto;
+  position: relative;
+}
+div.nav a {
+  font-size: 1.2em;
+  padding: 15px;
+}
+div.nav a:hover {
+  background-color: white;
+}
+a.burger {
+  display: none;
+}
 }
 
 @media only screen and (min-width: 1080px) {
