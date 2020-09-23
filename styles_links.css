@@ -1,0 +1,131 @@
+/* Box Shop [Store] Links */
+a.box:link, a.box:visited {
+  border: crimson solid 2px;
+  border-radius: 3px;
+  color: crimson;
+  font-weight: 500;
+  padding: 8px;
+  transition: all 750ms;
+}
+a.box:hover, a.box:active {
+  background-color: crimson;
+  border: crimson solid 2px;
+  color: #ffffff;
+}
+
+/* "Button" Links - Shop */
+a.shop:link, a.shop:visited {
+  background-color: #FE9DB2;
+  border-radius: 12px 0 0 12px;
+  font-family: 'Karla', sans-serif;
+  color: #333333;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1; /* required for link button & info button to be aligned*/
+  margin: 8px 0 0 0;
+  padding: 22px 0px 22px 20px;
+  transition: background-color 250ms linear;
+  width: calc(100% - 15px - 12px - 52px); /* 100% minus info button padding minus arbitary number */
+}
+a.shop:hover, a.shop:active {
+  background-color: #94F1D5;
+  color: #540A61;
+}
+
+/* "Button" Links - Misc */
+a.misc:link, a.misc:visited {
+  background-color: #94F1D5;
+}
+a.misc:hover, a.misc:active {
+  background-color: #FE9DB2;
+  color: #540A61;
+}
+
+/* Info Button */
+button.info {
+  background-color: #FFA06D;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  color: #333333;
+  display: inline-block;
+  height: 60px;
+  line-height: 1;
+  margin-left: -4px;  /* removes gap between shop/misc links & info button */
+  padding: 5px 15px 5px 12px;
+  transition: background-color 250ms linear;
+  vertical-align: bottom;
+}
+button:hover, button:active {
+  background-color: #F41F4C;
+  color: white;
+}
+
+
+.collapse {
+  cursor: auto;  /* Required to see cursor when hovered over content */
+  margin: 0 auto;  /* centers content */
+  max-height: 0;
+  overflow: hidden;  /* Text doesn't load before show animation is done */
+  transition: max-height 0.5s ease-in;
+  visibility: hidden;
+}
+
+
+/* for the links page content */
+div.links {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px;
+}
+/* Product Images */
+div.flex {
+  font-weight: 500;
+  /* Flex */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* Transitions*/
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+/* focus on hovering over product images */
+div.flex:hover > span.products:not(:hover) {
+  color: #444444;
+  opacity: 0.4;
+  transition: 0.8s ease;
+}
+/* Space Social Media Icons Evenly */
+div.social {
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+
+span.products {
+  /* Centers products*/
+  margin: auto;
+  max-width: 82%;
+  text-align: center;
+}
+
+/* Desktop */
+@media only screen and (min-width: 1080px) {
+  a.shop:link, a.shop:visited {
+    max-width: 90%;
+    /* min-width: 50%; */
+  }
+  div.links {
+    width: 80%;
+  }
+  span.products {
+    max-width: 33%;
+    padding: 1px 0 1px 2px;
+  }
+}

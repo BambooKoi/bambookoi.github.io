@@ -16,53 +16,51 @@
     <title>BambooKoi | Shops & Links</title>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_links.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <!-- Nav Goes Here -->
-
-    <!-- Koi Logo -->
-    <div class="center">
-        <img src="images/iko.png" alt="BambooKoi's avatar icon" style="max-width:170px; height:auto;" >
-    </div>
+    <!-- Nav -->
+    <div id="nav"></div>
 
     <!-- Main div -->
-    <div>
-
-    <div class="center">
+    <div class="content">
+    <div class="links">
+        
         <h1>Shops</h1>
-        <p class="outlier">All shops offer shirts, stickers, face masks (general public use only), prints & more.
-            <span style="white-space: nowrap">See <i class="lar la-question-circle"></i> for info.</span></p>
+        <p>All shops offer shirts, stickers, pins, face masks (general use only), prints & more.
+            <span style="white-space: nowrap">See <i class="lar la-question-circle"></i> for info.</span>
+        </p>
 
         <!-- "&emsp;"" twice to add whitespace so link looks centered -->
         <!-- Redbubble -->
         <a href="https://bambookoi.redbubble.com" class="shop" target="_blank" rel=”noopener”>&emsp;&emsp;Redbubble</a>
-
         <button type="button" class="info" title="More info - Redbubble"><i class="lar la-question-circle la-2x"></i></button>
-        <div class="content">
+        <div class="collapse">
             <h2>Redbubble</h2>
                         
             <h3>Featured Products</h3>
             <div class="flex">
                 <span class="products">
                     <a href="https://www.redbubble.com/people/bambookoi/shop?artistUserName=bambookoi&asc=u&iaCode=all-stickers" target="_blank" rel="noopener">
-                        <img src="images/rb_glossysticker.png" alt='A happy cactus (with a balloon) - glossy sticker on a metal bottle.' style="max-width: 100%;">
+                        <img src="images/shops/rb_glossysticker.png" alt='A happy cactus (with a balloon) - glossy sticker on a metal bottle.' style="max-width: 100%;">
                         Stickers
                     </a>
                 </span>
             
                 <span class="products">
                     <a href="https://www.redbubble.com/people/bambookoi/shop?artistUserName=bambookoi&asc=u&iaCode=u-prints" target="_blank" rel="noopener">
-                        <img src="images/rb_artprint.png" alt='An art print of "Mother&apos;s Pearls" - a Steven Universe fan art.' style="max-width: 100%;">
+                        <img src="images/shops/rb_artprint.png" alt='An art print of "Mother&apos;s Pearls" - a Steven Universe fan art.' style="max-width: 100%;">
                         Wall Art
                     </a>
                 </span>
 
                 <span class="products">
                     <a href="https://www.redbubble.com/people/bambookoi/shop?artistUserName=bambookoi&asc=u&iaCode=u-socks" target="_blank" rel="noopener">
-                        <img src="images/rb_socks.png" alt='Socks with an onigiri (Royal Onigiri) pattern on them.' style="max-width: 100%;">
+                        <img src="images/shops/rb_socks.png" alt='Socks with an onigiri (Royal Onigiri) pattern on them.' style="max-width: 100%;">
                         Socks
                     </a>
                 </span>
@@ -76,7 +74,7 @@
 
             <h3>Fan Art</h3>
             <p>
-                Thanks to the <a href="https://www.redbubble.com/partner-program" target="_blank" rel="noopener">Redbubble Partner Program</a>, my fan art is officially licensed on Redbubble. I currently offer fan art from:
+                Thanks to the <a href="https://www.redbubble.com/partner-program" target="_blank" rel="noopener">Redbubble Partner Program</a>, my fan art is officially licensed on Redbubble. If you're looking for any of my recent fan art from the list below, the approval process can take a while. I currently offer fan art from:
             </p>
             <ul>
                 <li>Adventure Time</li>
@@ -97,7 +95,7 @@
             
             <p>Students can also get a 15% discount. <a href="https://redbubble.connect.studentbeans.com/" target="_blank" rel="noopener">Details here</a>.</p>
 
-            <p>Disclaimer: In the case that the information here does not match Redbubble, please refer to Redbubble for discounted information.</p>
+            <p style="font-size: small;">Disclaimer: In the case that the information here does not match Redbubble, please refer to Redbubble for discounted information.</p>
 
             <p>
                 <a href="https://bambookoi.redbubble.com" class="box" target="_blank" rel=”noopener”>Shop My Redbubble</a>
@@ -108,28 +106,28 @@
         <!-- Society6 -->
         <a href="https://society6.com/bambookoi" class="shop" target="_blank" rel=”noopener”>&emsp;&emsp;Society6</a>
         <button type="button" class="info" title="More info - Society6"><i class="lar la-question-circle la-2x"></i></button>
-        <div class="content">
+        <div class="collapse">
             <h2>Society6</h2>
                         
             <h3>Featured Products</h3>
             <div class="flex">
                 <span class="products">
                     <a href="https://society6.com/bambookoi/notebooks" target="_blank" rel="noopener">
-                        <img src="images/s6_notebook.png" alt='A notebook with an illustration of a mossy rock with the words "You Rock".' style="max-width: 100%;">
+                        <img src="images/shops/s6_notebook.png" alt='A notebook with an illustration of a mossy rock with the words "You Rock".' style="max-width: 100%;">
                         Notebooks
                     </a>
                 </span>
             
                 <span class="products">
                     <a href="https://society6.com/bambookoi/carry-all-pouches" target="_blank" rel="noopener">
-                        <img src="images/s6_carry-allpouches.png" alt='A carry-all pouch with a turtle wearing shades and carrying a watermelon slice.' style="max-width: 100%;">
+                        <img src="images/shops/s6_carry-allpouches.png" alt='A carry-all pouch with a turtle wearing shades and carrying a watermelon slice.' style="max-width: 100%;">
                         Carry-All Pouches
                     </a>
                 </span>
 
                 <span class="products">
                     <a href="https://society6.com/bambookoi/cards" target="_blank" rel="noopener">
-                        <img src="images/s6_card.png" alt='A carry-all pouch featuring a design of koala with tea. Text around the koala says "Enjoying some koala-tea time by myself".' style="max-width: 100%;">
+                        <img src="images/shops/s6_card.png" alt='A carry-all pouch featuring a design of koala with tea. Text around the koala says "Enjoying some koala-tea time by myself".' style="max-width: 100%;">
                         Stationary Cards
                     </a>
                 </span>
@@ -157,28 +155,28 @@
         <!-- Teepublic -->
         <a href="https://teepublic.com/user/bambookoi" class="shop" target="_blank" rel=”noopener”>&emsp;&emsp;Teepublic</a>
         <button type="button" class="info" title="More info - Teepublic"><i class="lar la-question-circle la-2x"></i></button>
-        <div class="content">
+        <div class="collapse">
             <h2>Teepublic</h2>
                         
             <h3>Featured Products</h3>
             <div class="flex">
                 <span class="products">
                     <a href="https://www.teepublic.com/user/bambookoi/tapestries" target="_blank" rel="noopener">
-                        <img src="images/tp_tapestry.png" alt='A tapestry featuring Cookie Cat from Steven Universe.' style="max-width: 100%;">
+                        <img src="images/shops/tp_tapestry.png" alt='A tapestry featuring Cookie Cat from Steven Universe.' style="max-width: 100%;">
                         Tapestries
                     </a>
                 </span>
 
                 <span class="products">
                     <a href="https://www.teepublic.com/user/bambookoi/pins" target="_blank" rel="noopener">
-                        <img src="images/tp_pin.png" alt='A ghost pin. The text says "I am dead tired let me rest in peace".' style="max-width: 100%;">
+                        <img src="images/shops/tp_pin.png" alt='A ghost pin. The text says "I am dead tired let me rest in peace".' style="max-width: 100%;">
                         Pins
                     </a>
                 </span>
 
                 <span class="products">
                     <a href="https://www.teepublic.com/user/bambookoi/laptop-case" target="_blank" rel="noopener">
-                        <img src="images/tp_laptopcase.png" alt='A laptop case featuring CL4P-TP from the Borderlands franchise.' style="max-width: 100%;">
+                        <img src="images/shops/tp_laptopcase.png" alt='A laptop case featuring CL4P-TP from the Borderlands franchise.' style="max-width: 100%;">
                         Laptop Cases
                     </a>
                 </span>
@@ -186,7 +184,7 @@
 
             <h3>Fan Art</h3>
             <p>
-                Thanks to the <a href="https://teepublic.zendesk.com/hc/en-us/articles/360022642254-Fan-Art-Program-Overview" target="_blank" rel="noopener">Fan Art Program</a>, my fan art is officially licensed on Teepublic. I currently offer fan art from:
+                Thanks to the <a href="https://teepublic.zendesk.com/hc/en-us/articles/360022642254-Fan-Art-Program-Overview" target="_blank" rel="noopener">Fan Art Program</a>, my fan art is officially licensed on Teepublic. If you're looking for any of my recent fan art from the list below, the approval process can take a while. I currently offer fan art from:
             </p>
             <ul>
                 <li>Adventure Time</li>
@@ -203,7 +201,7 @@
         <!-- Threadless -->
         <a href="https://bambookoi.threadless.com" class="shop" target="_blank" rel=”noopener”>&emsp;&emsp;Threadless*</a>
         <button type="button" class="info" title="More info - Threadless"><i class="lar la-question-circle la-2x"></i></button>
-        <div class="content">
+        <div class="collapse">
             <h2>Threadless*</h2>
             
             <p>*Features only a small handful of my designs. See the above three shops for all of my designs.</p>
@@ -212,21 +210,21 @@
             <div class="flex">
                 <span class="products">
                     <a href="https://bambookoi.threadless.com/" target="_blank" rel="noopener">
-                        <img src="images/th_bucketfeet.png" alt='Shoes with a frog and lilypad pattern.' style="max-width: 100%;">
+                        <img src="images/shops/th_bucketfeet.png" alt='Shoes with a frog and lilypad pattern.' style="max-width: 100%;">
                         Bucketfeet Shoes
                     </a>
                 </span>
             
                 <span class="products">
                     <a href="https://bambookoi.threadless.com/" target="_blank" rel="noopener">
-                        <img src="images/th_shirt.png" alt='Picture of a shirt with a cute coffee cup eating a dounut.' style="max-width: 100%;">
+                        <img src="images/shops/th_shirt.png" alt='Picture of a shirt with a cute coffee cup eating a dounut.' style="max-width: 100%;">
                         T-Shirts
                     </a>
                 </span>
 
                 <span class="products">
                     <a href="https://bambookoi.threadless.com/accessories/bag/tote-bag" target="_blank" rel="noopener">
-                        <img src="images/th_tote.png" alt='A shiba inu in a bush disguise on a tote bag.' style="max-width: 100%;">
+                        <img src="images/shops/th_tote.png" alt='A shiba inu in a bush disguise on a tote bag.' style="max-width: 100%;">
                         Tote Bags
                     </a>
                 </span>
@@ -243,20 +241,18 @@
             </p>
         </div>
 
-    <div class="center">
         <h1>Misc.</h1>
-
         <!-- Freebies -->
         <a href="https://ko-fi.com/album/Wallpaper-O5O012PWV" class="shop misc" target="_blank" rel="noopener">&emsp;&emsp;Freebies</a>
 
         <button type="button" class="info" title="More info - Freebies"><i class="lar la-question-circle la-2x"></i></i></button>
-        <div class="content">
+        <div class="collapse">
 
             <h2>Freebies</h2>
 
             <h3>Phone Wallpaperss</h3>
             <p>Download any one of these images and more below, just follow the link. For personal use only. 720 x 1280 resolution.</p>
-            <img src="images/wallpapers.png" alt="Sample images of phone wallpapers" style="max-width: 100%;">
+            <img src="images/shops/wallpapers.png" alt="Sample images of phone wallpapers" style="max-width: 100%;">
             
             <br><br>
             <a href="https://ko-fi.com/album/Wallpaper-O5O012PWV" class="box" target="_blank" rel="noopener">Download Wallpapers</a>
@@ -268,7 +264,7 @@
         <a href="https://ko-fi.com/bambookoi" class="shop misc" target="_blank" rel="noopener">&emsp;&emsp;Ko-fi (Support Me)</a>
 
         <button type="button" class="info" title="More info - Ko-fi"><i class="lar la-question-circle la-2x"></i></i></button>
-        <div class="content">
+        <div class="collapse">
 
             <h2>Ko-fi</h2>
 
@@ -284,49 +280,45 @@
             <!-- Ko-fi button -->
             <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'I2I77G74');kofiwidget2.draw();</script><br/>
             <br>
-        </div> 
+        </div>
         
+
+        <!-- Social Links -->
+        <div class="social" style="font-size: 38px; padding: 10px;">
+
+            <!-- Instagram/Twitter -->
+            <a href="https://instagram.com/bambookoi_art/" class="social" target="_blank" rel=”noopener” title="Follow BambooKoi on Instagram">
+                <i class="lab la-instagram"></i>
+            </a>
+                
+            <a href="https://twitter.com/BambooKoi" class="social" target="_blank" rel=”noopener” title="Follow BambooKoi on Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+
+            <!-- Design Portfolios -->
+            <a href="https://dribbble.com/bambookoi" class="social" target="_blank" rel="noopener" title="BambooKoi's dribbble">
+                <i class="lab la-dribbble"></i>
+            </a>
+
+            <a href="https://artstation.com/bambookoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's ArtStation">
+                <i class="lab la-artstation"></i>
+            </a>
+
+            <a href="https://behance.net/BambooKoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's Behance">
+                <i class="lab la-behance"></i>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/bambookoi" class="social" target="_blank" rel="noopener" title="BambooKoi's GitHub Profile">
+                <i class="lab la-github"></i>
+            </a>
+        </div>
+        
+        <p style="font-size: small">I may sometimes list older art on Amazon Merch but anything outside of the list here, are unauthorized copies. Please do not buy these and report them. Thank you! ♡</p>
     </div>
-
-    <!-- Social Links -->
-    <div class="social">
-
-        <!-- Instagram/Twitter -->
-        <a href="https://instagram.com/bambookoi_art/" class="social" target="_blank" rel=”noopener” title="Follow BambooKoi on Instagram">
-            <i class="lab la-instagram"></i>
-        </a>
-            
-        <a href="https://twitter.com/BambooKoi" class="social" target="_blank" rel=”noopener” title="Follow BambooKoi on Twitter">
-            <i class="lab la-twitter"></i>
-        </a>
-
-        <!-- Design Portfolios -->
-        <a href="https://dribbble.com/bambookoi" class="social" target="_blank" rel="noopener" title="BambooKoi's dribbble">
-            <i class="lab la-dribbble"></i>
-        </a>
-
-        <a href="https://artstation.com/bambookoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's ArtStation">
-            <i class="lab la-artstation"></i>
-        </a>
-
-        <a href="https://behance.net/BambooKoi" class="social" target="_blank" rel=”noopener” title="BambooKoi's Behance">
-            <i class="lab la-behance"></i>
-        </a>
-
-        <!-- GitHub -->
-        <a href="https://github.com/bambookoi" class="social" target="_blank" rel="noopener" title="BambooKoi's GitHub Profile">
-            <i class="lab la-github"></i>
-        </a>
-
-    </div>
-
     </div>
     <!-- Main div ends -->
 
-    <!-- Footer -->
-    <div id="footer" class="center footer"></div>
-    
-    <div class="backtop" id="scrolled"></div>
 
     <!-- Show/Collapse Info -->
     <script async>

@@ -5,35 +5,56 @@ gtag('js', new Date());
 
 gtag('config', 'UA-102814295-6');
 
-// Show back to top on scroll
-window.onscroll = function() {scrolling()};
-        
-function scrolling() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById("scrolled").innerHTML = '<a href="#" id="scrolled" title="Back to top"><i class="las la-angle-up"></i></a>';
-  } else {
-      document.getElementById("scrolled").innerHTML = '';
-  }
-}
 
 // Import header.html, nav.html and footer.html
 $(function() {
   $("#header").load("header.html");
-  // $("#nav-js").load("nav.html");
-  $("#footer").load("footer.html");
+  $("#nav-js").load("nav.html");
 });
 
-/*
-// nav toggle
-function navToggle() {
-  var x = document.getElementById("nav-js");
-  if (x.style.display === "inline-block") {
-    x.style.display = "none";
-    document.getElementByClassName("burger").innerHTML = '<i class="las la-bars"></i>';
+
+// Show Back to Top on Scroll:
+var scrollup = document.getElementById("backtop");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    scrollup.style.display = "block";
   } else {
-    x.style.display = "inline-block";
-    // Toggle icon: X doesn't appear?
-    document.getElementByClassName("burger").innerHTML = '<i class="las la-times"></i>';
+    scrollup.style.display = "none";
   }
 }
-*/
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+// Fix Navigation Menu Width if Switched between <= 1080px:
+// media query event handler
+if (matchMedia) {
+  const mq = window.matchMedia("(min-width: 1080px)");
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+  }
+
+  // media query correct nav menu if window resized
+  function WidthChange(mq) {
+  if (mq.matches) {
+      document.getElementById("menu").style.width = "250px";
+  } else {
+      document.getElementById("menu").style.width = "0";
+  }
+}
+
+
+// Navigation Hamburger Toggle
+function openNav() {
+  document.getElementById("menu").style.width = "100vw";
+}
+
+function closeNav() {
+  document.getElementById("menu").style.width = "0";
+}
