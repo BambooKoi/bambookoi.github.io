@@ -6,7 +6,7 @@ gtag('js', new Date());
 gtag('config', 'UA-102814295-6');
 
 
-// Import header.html, nav.html and footer.html
+// Import header.html, nav.html
 $(function() {
   $("#header").load("header.html");
   $("#nav-js").load("nav.html");
