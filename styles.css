@@ -69,6 +69,19 @@ a.social:link, a.social:visited {
 }
 
 
+.footer {
+  background-color: #333333;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* padding: 0 5px 0 5px; */
+  width: 100%;
+}
+.footer p {
+  color: white;
+  font-size: small;
+  text-align: left;
+}
+
 .about {
   display: inline-flex;
   flex-wrap: wrap-reverse;
@@ -203,7 +216,13 @@ div.social:hover > a.social:not(:hover) {
   color: white;
   font-size: small;
 }
-
+/* Message/alert/descriptions @ top of portfolio pages */
+.message {
+  background-color: #ffdecc;
+  padding: 5%;
+  text-align: left; 
+  width: 100%;
+}
 
 :focus {
   box-shadow: 0 0 0 2px #444444;

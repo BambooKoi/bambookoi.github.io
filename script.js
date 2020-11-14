@@ -8,8 +8,9 @@ gtag('config', 'UA-102814295-6');
 
 // Import header.html, nav.html
 $(function() {
-  $("#header").load("header.html");
+  $("#header-js").load("header.html");
   $("#nav-js").load("nav.html");
+  $("#footer-js").load("footer.html");  //make footer.html by copying footer from wipindex.html then add the footer div to all pages
 });
 
 
