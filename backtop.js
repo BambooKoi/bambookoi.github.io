@@ -1,3 +1,6 @@
+// Back to Top Script has to load after the content
+// It gets its own JS file.
+
 // Show Back to Top on Scroll:
 var scrollup = document.getElementById("backtop");
 

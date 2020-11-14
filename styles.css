@@ -71,6 +71,7 @@ a.social:link, a.social:visited {
 
 .footer {
   background-color: #333333;
+  display: flex;
   padding-left: 10px;
   padding-right: 10px;
   width: 100%;
