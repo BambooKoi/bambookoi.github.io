@@ -78,8 +78,8 @@ a.social:link, a.social:visited {
 }
 .footer p {
   color: white;
-  font-size: small;
-  text-align: left;
+  font-size: medium;
+  text-align: center;
 }
 
 .about {
@@ -297,6 +297,11 @@ div.social:hover > a.social:not(:hover) {
     /* top & bottom, right & left padding */
     padding: 0 10px;
   }
+  .footer p {
+    font-size: small;
+    text-align: left;
+  }
+  
 }
 
 @media only screen and (min-width: 1300px) {
