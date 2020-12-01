@@ -79,7 +79,7 @@ a.social:link, a.social:visited {
 .footer p {
   color: white;
   font-size: medium;
-  text-align: center;
+  text-align: left;
 }
 
 .about {
@@ -299,7 +299,6 @@ div.social:hover > a.social:not(:hover) {
   }
   .footer p {
     font-size: small;
-    text-align: left;
   }
   
 }
