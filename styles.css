@@ -272,6 +272,11 @@ div.social:hover > a.social:not(:hover) {
     right: 10px;
   }
 
+
+  .about {
+    padding: 10px;
+  }
+  
   div.content {
     margin-left: 250px;
     overflow: hidden;
