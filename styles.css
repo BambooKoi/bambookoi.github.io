@@ -57,12 +57,14 @@ a.social:link, a.social:visited {
 #backtop {
   background-color: rgba(245, 245, 245, 0.5);
   border-radius: 8px;
-  bottom: 0px;
+  /* bottom: 0px; */
   display: none;
+  float: right;
   font-size: 2em;
   padding: 5px 7px 5px 7px;
-  position: fixed;
-  right: 0px;
+  position: relative;
+  /* position: fixed; */
+  /* right: 0px; */
 }
 #backtop:hover {
   background-color:#FFBF9D;
@@ -268,6 +270,7 @@ div.social:hover > a.social:not(:hover) {
   }
 
   #backtop {
+    position: fixed;
     bottom: 10px;
     right: 10px;
   }
@@ -276,7 +279,7 @@ div.social:hover > a.social:not(:hover) {
   .about {
     padding: 10px;
   }
-  
+
   div.content {
     margin-left: 250px;
     overflow: hidden;
