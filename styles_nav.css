@@ -1,0 +1,73 @@
+/* CSS for Navigation */
+/* Mobile */
+
+/* Mobile Navigation Bar */
+.nav_bar {
+    background-color: white;
+    height: 50px;
+    width: 100vw;
+  }
+  /* Navigation Toggle Open/Close */
+  .nav_toggle {
+    color: #F8456C;
+    font-size: 36px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+  /* Navigation Menu */
+  .nav {
+    /* background-color for mobile overlay */
+    background-color: rgba(255, 255, 255, 0.97);
+    bottom: 50px;
+    font-family: 'Karla', sans-serif;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+    text-align: left;
+    padding-top: 35px;
+    width: 0;
+    z-index: 1;
+  }
+  .nav_items {
+    /* padding: 7%; */
+    width: 75%;
+  }
+  .nav a {
+    color: #333333;
+    display: block;
+    font-size: 1.6em;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 5px;
+  }
+  .nav a:hover, a:active {
+    color: #F8456C;
+    background-color: #ffdecc;
+  }
+  
+
+/* Desktop */
+@media only screen and (min-width: 1080px) {
+.nav_bar {
+  display: none;
+  }
+  .nav_toggle {
+    visibility: hidden;
+  }
+  .nav {
+    background-color: white;
+    height: 100%;
+    margin: 0;
+    padding-top: 20px;
+    text-align: left;
+    width: 250px;
+  }
+  .nav_items {
+    margin: 0 auto;
+    padding: 8px;
+  }
+  .nav a {
+    font-size: 1.15em;
+  }
+}    

@@ -57,14 +57,13 @@ a.social:link, a.social:visited {
 #backtop {
   background-color: rgba(245, 245, 245, 0.5);
   border-radius: 8px;
-  /* bottom: 0px; */
+  bottom: 0px;
   display: none;
   float: right;
   font-size: 2em;
   padding: 5px 7px 5px 7px;
-  position: relative;
-  /* position: fixed; */
-  /* right: 0px; */
+  position: fixed;
+  right: 0px;
 }
 #backtop:hover {
   background-color:#FFBF9D;
@@ -75,8 +74,8 @@ a.social:link, a.social:visited {
   background-color: #333333;
   display: flex;
   /* top, right & left, bottom padding */
-  padding: 15px 20px 25px;
-  width: 100%;
+  padding: 15px 0 25px;
+  width: 100vw;
 }
 .footer p {
   color: white;
@@ -90,6 +89,10 @@ a.social:link, a.social:visited {
 }
 .about img {
   width: 100%;
+}
+
+div.content {
+  padding: 0;
 }
 /* Flex Social Media Icons */
 /* See styles_links for Spacing */
@@ -120,50 +123,6 @@ div.social:hover > a.social:not(:hover) {
   height: auto;
   margin-bottom: 15px;
   max-width: 150px;
-}
-
-/* Mobile Navigation Bar */
-.nav_bar {
-  background-color: white;
-  height: 50px;
-  width: 100vw;
-}
-/* Navigation Toggle Open/Close */
-.nav_toggle {
-  color: #F8456C;
-  font-size: 36px;
-  position: absolute;
-  top: 5px;
-  right: 10px;
-}
-/* Navigation Menu */
-.nav {
-  /* background-color for mobile overlay */
-  background-color: rgba(255, 255, 255, 0.97);
-  font-family: 'Karla', sans-serif;
-  height: 100%;
-  position: fixed;
-  overflow-x: hidden;
-  text-align: left;
-  padding-top: 35px;
-  width: 0;
-  z-index: 1;
-}
-.nav_items {
-  padding: 7%;
-  width: 80%;
-}
-.nav a {
-  color: #333333;
-  display: block;
-  font-size: 1.5em;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 5px;
-}
-.nav a:hover, a:active {
-  color: #F8456C;
-  background-color: #ffdecc;
 }
 
 
@@ -242,35 +201,14 @@ div.social:hover > a.social:not(:hover) {
 
   .about {
     max-width: 70%;
+    margin: auto;
   }
   .about img {
     max-width: 55%;
   }
 
-  .nav_bar {
-    display: none;
-  }
-  .nav_toggle {
-    visibility: hidden;
-  }
-  .nav {
-    background-color: white;
-    height: 100%;
-    margin: 0;
-    padding-top: 20px;
-    text-align: left;
-    width: 250px;
-  }
-  .nav_items {
-    margin: 0 auto;
-    padding: 8px;
-  }
-  .nav a {
-    font-size: 1.15em;
-  }
-
+  
   #backtop {
-    position: fixed;
     bottom: 10px;
     right: 10px;
   }
