@@ -126,7 +126,7 @@ div.social:hover > a.social:not(:hover) {
 }
 
 
-/* Portfolio Home Links */
+/* Portfolio Home Thumbnail Links */
 .flex-thumbnails {
   align-content: center;
   display: -ms-flexbox;
@@ -182,6 +182,10 @@ div.social:hover > a.social:not(:hover) {
   padding: 5%;
   text-align: left; 
   width: 100%;
+}
+.message-info {
+  /* background-color: #ffdecc; */
+  text-align: left; 
 }
 
 :focus {
@@ -240,11 +244,11 @@ div.social:hover > a.social:not(:hover) {
     background-color: #333333c2;
   }
   .footer {
-    /* top & bottom, right & left padding */
-    padding: 0 10px;
+    padding: 5px 0;
   }
   .footer p {
     font-size: small;
+    padding: 0 15px;
   }
   
 }
